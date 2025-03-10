@@ -469,7 +469,7 @@
       "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "kb_test.step",
+      "step": "kb_test_big.step",
       "svg": "",
       "vrml": ""
     },
