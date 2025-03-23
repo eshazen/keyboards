@@ -11,10 +11,10 @@ include <joint.scad>
 hgt = 5.1;  // plate height
 
 // set to 0 for normal size
-shrink_x = 270;
-shrink_y = 100;
-//shrink_x = 0;
-//shrink_y = 0;
+//shrink_x = 270;
+//shrink_y = 100;
+shrink_x = 0;
+shrink_y = 0;
 
 // plate dims from DXF
 pwid = 344.8-shrink_x;
@@ -166,7 +166,8 @@ module case_left_joint() {
  	  joint( joint_wid, case_top_marg, case_hgt, true, clear, tap);
 }
 
-// render();
+//render();
 
-translate( [35, 0, 0]) case_right_joint();
+//case_right_joint();
+
 case_left_joint();

@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "8.0.8-8.0.8-0~ubuntu22.04.1"
     },
-    "CreationDate": "2025-03-09T08:59:39-04:00"
+    "CreationDate": "2025-03-13T07:20:04-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,8 +14,8 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 324.8517,
-      "Y": 134.3516
+      "X": 323.05,
+      "Y": 117.05
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -27,7 +27,9 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.254,
+      "RegionToRegion": 0.254
     }
   ],
   "FilesAttributes": [
@@ -39,16 +41,6 @@
     {
       "Path": "kb_test-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "kb_test-F_Paste.gbr",
-      "FileFunction": "SolderPaste,Top",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "kb_test-B_Paste.gbr",
-      "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {

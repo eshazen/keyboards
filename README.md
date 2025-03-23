@@ -13,8 +13,9 @@ to 60% but with a function key row.
 * [Keyboard University](https://www.keyboard.university/)
 * [Pro Micro up to 100 pins](https://golem.hu/guide/pro-micro/)
 
-Starting to investigate QMK.  For example the "handwired/hwpm87"n has 87 keys and uses a pro micro with extra 
-pins soldered.  Seems promising.
+Starting to investigate QMK.  For example the "handwired/hwpm87" has
+87 keys and uses a pro micro with extra pins soldered.  Seems
+promising.  See README_QMK.md for details.
 
 ## My 84 key
 
@@ -41,4 +42,3 @@ DXFs in `...Case/case1`
 PCB in `...kb_test`
 
 </ul>
-
