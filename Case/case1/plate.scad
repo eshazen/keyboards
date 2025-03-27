@@ -36,6 +36,10 @@ pcb_thk = 1.6;
 
 case_pcb_clear = 1;
 
+// cutout for USB cable
+cutout_left = 16;
+cutout_size = 14;
+
 // position of lower left switch WRT item LL corner
 pcb_ll_x = 29.94;
 pcb_ll_y = 11.57;
@@ -64,7 +68,7 @@ case_top_marg = case_len-(pcb_len+2*case_pcb_clear)-case_bot_marg;
 echo("Top Marg: ", case_top_marg);
 
 module case() {
-     translate( [case_A, case_A, 0])
+     translate( [case_A, case_A, 0]) {
 	  difference() {
 	       translate( [-case_A, -case_A, 0])
 		    cube( [case_wid, case_len, case_hgt]);
@@ -72,9 +76,10 @@ module case() {
 		    cube( [pcb_wid + 2*case_pcb_clear, pcb_len + 2*case_pcb_clear, 20]);
 	       translate( [0, 0, case_D])
 		    mtg_holes();
-
+	       translate( [cutout_left-case_A, case_len-case_top_marg-e-case_A, case_D+1])
+		    cube( [20, 20, 20]);
 	  }
-//     }
+     }
 }
 
 // draw real plate or fake plate if shrinking
