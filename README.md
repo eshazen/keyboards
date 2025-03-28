@@ -3,10 +3,17 @@
 ## Status
 
 All done, working!  Used QMK for the firmware.  See `my_84/qmk/eric_84/key` for modified
-`keyboard.json` and `keymaps/default/keymap.s`.
+`keyboard.json` and `keymaps/default/keymap.c`.
 
 Working on a new daily driver.  Like the "80%" style which is similar
 to 60% but with a function key row.
+
+To change layout, edit `~/qmk_firmware/keyboards/eric_84_key/keymaps/default/keymap.c`.
+Then re-flash with:
+
+    qmk flash -kb eric_84_key -km default
+
+(This can be done "live" as long as you have access to the Arduino reset button).
 
 ## Tools:
 
