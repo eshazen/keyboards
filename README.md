@@ -1,5 +1,10 @@
 # Keyboard project(s)
 
+## Status
+
+All done, working!  Used QMK for the firmware.  See `my_84/qmk/eric_84/key` for modified
+`keyboard.json` and `keymaps/default/keymap.s`.
+
 Working on a new daily driver.  Like the "80%" style which is similar
 to 60% but with a function key row.
 
