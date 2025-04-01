@@ -1,6 +1,6 @@
 # Keyboard project(s)
 
-<img src="https://github.com/eshazen/keyboards/blob/main/photo_1.jpg width=600">
+<img src="https://github.com/eshazen/keyboards/blob/main/photo_1.jpg" width=600>
 <p>
 
 ## Status
