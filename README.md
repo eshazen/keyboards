@@ -5,8 +5,10 @@
 
 ## Status
 
-All done, working!  Used QMK for the firmware.  See `my_84/qmk/eric_84/key` for modified
-`keyboard.json` and `keymaps/default/keymap.c`.  See [README.qmk](README.qmk).
+All done, working!  Used QMK for the firmware.  
+<br>See `my_84/qmk/eric_84/key` for modified
+`keyboard.json` and `keymaps/default/keymap.c`.  
+<br>See [README.qmk](README.qmk).
 
 To change layout, edit `~/qmk_firmware/keyboards/eric_84_key/keymaps/default/keymap.c`.
 Then re-flash with:
@@ -18,6 +20,8 @@ Then re-flash with:
 In summary, created the layout in KLE, generated the plate and case
 geometry in `swillkb.com`, and the PCB using the `kbplacer` plugin for
 KiCAD.  Firmware generated using `qmk`.
+
+Waterjet cutter files for plate in `waterJet`.
 
 ## Tools:
 
