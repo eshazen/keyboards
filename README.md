@@ -1,12 +1,12 @@
 # Keyboard project(s)
 
+<img src="https://github.com/eshazen/keyboards/blob/main/photo_1.jpg" width=600>
+<p>
+
 ## Status
 
 All done, working!  Used QMK for the firmware.  See `my_84/qmk/eric_84/key` for modified
-`keyboard.json` and `keymaps/default/keymap.c`.
-
-Working on a new daily driver.  Like the "80%" style which is similar
-to 60% but with a function key row.
+`keyboard.json` and `keymaps/default/keymap.c`.  See [README.qmk](README.qmk).
 
 To change layout, edit `~/qmk_firmware/keyboards/eric_84_key/keymaps/default/keymap.c`.
 Then re-flash with:
@@ -15,19 +15,25 @@ Then re-flash with:
 
 (This can be done "live" as long as you have access to the Arduino reset button).
 
+In summary, created the layout in KLE, generated the plate and case
+geometry in `swillkb.com`, and the PCB using the `kbplacer` plugin for
+KiCAD.  Firmware generated using `qmk`.
+
 ## Tools:
 
 * [KLE](https://www.keyboard-layout-editor.com)
 * [Plate & Case Builder](http://builder.swillkb.com/) (from [github](https://github.com/vladantrhlik/Keyboard_case_generator?tab=readme-ov-file))
+* [kbplacer plugin](https://github.com/adamws/kicad-kbplacer) for KiCAD
+
+## References
+
 * [PCB video](https://www.youtube.com/watch?v=u13yRbBiRYM&t=10s)
 * [Case video](https://www.youtube.com/watch?v=NIIr19TdidY)
 * [Building Keyboards with Lasers](https://kbd.news/Building-keyboards-with-lasers-2208.html)
 * [Keyboard University](https://www.keyboard.university/)
 * [Pro Micro up to 100 pins](https://golem.hu/guide/pro-micro/)
 
-Starting to investigate QMK.  For example the "handwired/hwpm87" has
-87 keys and uses a pro micro with extra pins soldered.  Seems
-promising.  See README_QMK.md for details.
+Also used 
 
 ## My 84 key
 
@@ -39,18 +45,20 @@ promising.  See README_QMK.md for details.
     [{w:2.25},"Shift",{a:4},"Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{a:6,w:1.75},"Shift",{a:7},"↑",{a:6},"Page Down"],
     [{a:7,w:1.25},"Home",{a:6,w:1.25},"Menu",{w:1.25},"Alt",{a:7,w:6.25},"",{a:6},"Alt","Fn",{a:7},"End","←","↓","→"]
 
-Using http://builder.swillkb.com/
+Using [http://builder.swillkb.com/](http://builder.swillkb.com/).
 
-Settings:
+``` text
     Switch type: MX
 	Stab:  Cherry + Costar
 	Case: Sandwich
 	Holes 8, 4.5mm, 10mm
 	Edge:  Top: 10, Left: 30, Right: 10, Bottom: 25
 	Corners: 2mm
-	
-DXFs in `...Case/case1`
+```
+<br>DXFs in `...Case/case1`
+<br>PCB in `...kb_test`
 
-PCB in `...kb_test`
+This was OK except that the opening in the 'top' was a little tight.
+Enlarged the CAD file by .05" on all sides.
 
 </ul>
