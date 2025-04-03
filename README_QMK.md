@@ -25,3 +25,14 @@ Build instructions:
 	qmk flash -kb eric_84_key -km default
 	
 No problem reloading "live" keyboard as long as you have access to the reset button.
+
+## Notes on on Xubuntu 24.04 update
+
+(install gcc-avr, avr-libc, avrdude)
+
+	$ sudo apt install pipx
+    $ pipx install qmk
+    $ sudo usermod -a -G dialout $USER
+
+Then fix the link in `.local/bin` to `../share/pipx/venvs/qmk/bin/qmk`
+
