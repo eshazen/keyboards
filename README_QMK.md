@@ -30,6 +30,9 @@ No problem reloading "live" keyboard as long as you have access to the reset but
 
 (install gcc-avr, avr-libc, avrdude)
 
+Had to use pipx to install in a virtual environment since there doesn't
+seem to be an Ubuntu package for qmk.
+
 	$ sudo apt install pipx
     $ pipx install qmk
     $ sudo usermod -a -G dialout $USER
