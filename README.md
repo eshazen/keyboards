@@ -8,7 +8,7 @@
 All done, working!  Used QMK for the firmware.  
 <br>See `my_84/qmk/eric_84/key` for modified
 `keyboard.json` and `keymaps/default/keymap.c`.  
-<br>See [README.qmk](README.qmk).
+<br>See [README_QMK](README_QMK.md).
 
 To change layout, edit `~/qmk_firmware/keyboards/eric_84_key/keymaps/default/keymap.c`.
 Then re-flash with:
