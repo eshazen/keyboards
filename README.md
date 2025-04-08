@@ -8,7 +8,7 @@
 All done, working!  Used QMK for the firmware.  
 <br>See `my_84/qmk/eric_84/key` for modified
 `keyboard.json` and `keymaps/default/keymap.c`.  
-<br>See [README.qmk](README.qmk).
+<br>See [README_QMK](README_QMK.md).
 
 To change layout, edit `~/qmk_firmware/keyboards/eric_84_key/keymaps/default/keymap.c`.
 Then re-flash with:
@@ -23,11 +23,11 @@ KiCAD.  Firmware generated using `qmk`.
 
 Waterjet cutter files for plate in `waterJet`.
 
-## Tools:
+## Tools Used:
 
 * [KLE](https://www.keyboard-layout-editor.com)
-* [Plate & Case Builder](http://builder.swillkb.com/) (from [github](https://github.com/vladantrhlik/Keyboard_case_generator?tab=readme-ov-file))
-* [kbplacer plugin](https://github.com/adamws/kicad-kbplacer) for KiCAD
+* [Plate & Case Builder](http://builder.swillkb.com/) (from [github](https://github.com/vladantrhlik/Keyboard_case_generator?tab=readme-ov-file)).  This generates the DXF for the plate and stacked laser-cut case parts.
+* [kbplacer plugin](https://github.com/adamws/kicad-kbplacer) for KiCAD layout
 
 ## References
 
